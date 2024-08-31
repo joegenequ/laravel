@@ -16,6 +16,9 @@
         <div class="container">
             <div class="row">
                 <!-- Blog entries-->
+                <div class="col-lg-8">
+                <!-- Nested row for non-featured blog posts-->
+                <div class="row">                    
                 @foreach($posts as $post) 
                         <div class="col-lg-6">
                             <!-- Blog post-->
