@@ -108,7 +108,7 @@
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
                                     @foreach($categories as $category) 
-                                        <li><a href="#!">{{ $category }}</a></li>
+                                        <li><a href="#!">{{ $category->name }}</a></li> 
                                     @endforeach
                             </div>
                         </div>
