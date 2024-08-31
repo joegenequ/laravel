@@ -7,6 +7,6 @@ use Illuminate\Support\Facades\URL;   //Added this to allow forceRoot URL to get
 $url = config('app.url');
 URL::forceRootUrl($url);  //Added this to allow forceRoot URL to get from .env APP_URL
 
-Route::view('/', 'home')->name('home');
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home'); 
 Route::view('contact', 'contact')->name('contact');
 Route::view('about', 'about')->name('about');
